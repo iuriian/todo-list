@@ -1,0 +1,20 @@
+@mixin generic-properties() {
+  color: #000;
+  font-weight: 500;
+}
+
+.card {
+  margin: 0px 0px 12px;
+  border-radius: 8px;
+
+  &__label {
+    @include generic-properties;
+    font-style: italic;
+  }
+
+  &__data {
+    @include generic-properties;
+    font-size: 16px;
+    margin: 0px;
+  }
+}
